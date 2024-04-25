@@ -1,9 +1,3 @@
-
-let operacao = ""
-let calculo = ""
-let resultado
-let display
-
 function digit(value) {
     if (value === "1" || value === "3" || value === "2" || value === "4" || value === "5" || 
     value === "6" || value === "7" || value === "8" || value === "9" || value === "0" || value === "+" 
@@ -26,9 +20,9 @@ function addFloat(){
 }
 
 function resolve() {
-    let x = document.getElementById("result").value
-    let y = eval(x)
-    document.getElementById("result").value = y
+    let valorDisplay = document.getElementById("result").value
+    let calculo = eval(valorDisplay)
+    document.getElementById("result").value = calculo
 }
 
 function clearAll() {
